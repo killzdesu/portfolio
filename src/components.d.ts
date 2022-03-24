@@ -13,7 +13,6 @@ declare module 'vue' {
     ICarbonEmail: typeof import('~icons/carbon/email')['default']
     ICarbonHome: typeof import('~icons/carbon/home')['default']
     ICarbonMoon: typeof import('~icons/carbon/moon')['default']
-    ICarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
     ICarbonSun: typeof import('~icons/carbon/sun')['default']
     ICarbonTranslate: typeof import('~icons/carbon/translate')['default']
     ICarbonWarning: typeof import('~icons/carbon/warning')['default']
