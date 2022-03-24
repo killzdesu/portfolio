@@ -14,4 +14,17 @@ export default defineConfig({
   plugins: [
     transform('daisyui'),
   ],
+  theme: {
+    extend: {
+      animation: {
+        bounce: 'bounce 1s ease-out infinite'
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-25%)' },
+        }
+      }
+    }
+  }
 })

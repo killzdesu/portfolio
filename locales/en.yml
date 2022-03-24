@@ -12,16 +12,22 @@ hero:
   hello: Hello!
   iam: I'm
   call: Also called
-  line1: An ordinary human who trying to make everyday exciting.
+  intro: An ordinary human who trying to make everyday exciting.
   fulltime: Fulltime daydreamer
   parttime: Part-time clinician
   sometimes: Sometimes programmer
+  further: |
+    To learn more about my profile, skills, or favorite hobbies
+  more: see more information from 
+  above-icons: above icons!
 contact:
   head: Contact Me
-intro:
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  aka: Also known as
-  whats-your-name: What's your name?
+profile:
+  edu:
+    title: Education
+    school: Highschool
+    school-info: Mahidol Wittayanusorn school
+    bachelor: Bechelor
+    bachelor-info: Faculty of Medicine, Siriraj hospital, Mahidol
+    training: In training
 not-found: Not found

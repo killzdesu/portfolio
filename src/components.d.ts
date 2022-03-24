@@ -12,9 +12,11 @@ declare module 'vue' {
     ICarbonEducation: typeof import('~icons/carbon/education')['default']
     ICarbonEmail: typeof import('~icons/carbon/email')['default']
     ICarbonHome: typeof import('~icons/carbon/home')['default']
+    ICarbonIdentification: typeof import('~icons/carbon/identification')['default']
     ICarbonMoon: typeof import('~icons/carbon/moon')['default']
     ICarbonSun: typeof import('~icons/carbon/sun')['default']
     ICarbonTranslate: typeof import('~icons/carbon/translate')['default']
+    ICarbonUser: typeof import('~icons/carbon/user')['default']
     ICarbonWarning: typeof import('~icons/carbon/warning')['default']
     ICibFacebook: typeof import('~icons/cib/facebook')['default']
     ICibInstagram: typeof import('~icons/cib/instagram')['default']
@@ -23,7 +25,9 @@ declare module 'vue' {
     IMdiCreation: typeof import('~icons/mdi/creation')['default']
     IMdiFaceMan: typeof import('~icons/mdi/face-man')['default']
     IMdiHeartPulse: typeof import('~icons/mdi/heart-pulse')['default']
+    IMdiTextBoxOutline: typeof import('~icons/mdi/text-box-outline')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
+    ProfileEducation: typeof import('./components/ProfileEducation.vue')['default']
   }
 }
 

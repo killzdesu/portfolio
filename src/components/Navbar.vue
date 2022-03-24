@@ -1,26 +1,31 @@
 <script setup lang="ts">
 import { isDark, toggleDark } from '~/composables'
+import { useInteractionStore } from '~/stores/interaction'
 
 const { availableLocales, locale } = useI18n()
 const toggleLocales = () => {
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
 }
+
+const interaction = useInteractionStore()
+const navClass = computed(()=>([
+  'inline-flex',
+  {
+    'animate-bounce': interaction.isSeeMoreHover
+  }
+]))
 </script>
 
 <template>
   <div class="container mx-auto text-right">
-    <nav text="xl" class="inline-flex">
+    <nav text="xl" :class="navClass">
       <router-link class="mx-2" to="/" title="Home">
         <i-carbon-home />
       </router-link>
 
-      <router-link class="mx-2" to="/about" title="About">
-        <i-mdi-face-man />
-      </router-link>
-
-      <router-link class="mx-2" to="/edu" title="Education and Skills">
-        <i-carbon-education />
+      <router-link class="mx-2" to="/profile" title="Profile">
+        <i-carbon-user />
       </router-link>
 
       <router-link class="mx-2" to="/hobby" title="Hobby">

@@ -10,7 +10,8 @@
     "test": "vitest",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "gh-pages": "vite-ssg build && mv dist docs"
   },
   "dependencies": {
     "@vueuse/core": "^8.1.1",
