@@ -18,12 +18,13 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
-export default defineConfig({
+export default defineConfig(({ command, mode }) => ({
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+  base: (command=='serve' ? '/' : '/portfolio/'),
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
@@ -97,8 +98,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Portfolio Norapat',
+        short_name: 'Norapat',
         theme_color: '#ffffff',
         icons: [
           {
@@ -153,4 +154,4 @@ export default defineConfig({
       inline: ['@vue', '@vueuse', 'vue-demi'],
     },
   },
-})
+}))
