@@ -26,8 +26,7 @@ watch(isSeeMoreHover, (newVal, oldVal) => {
             <span class="block md:inline">{{t('hero.hello')}}</span> 
             {{t('hero.iam')}} <span class="text-primary-focus">{{t('name')}}</span>
           </h1>
-          <p text="base bold 2xl"
-            class="">
+          <p text="bold 2xl" >
             <span class="italic">{{t('hero.call')}}</span> <strong class="text-primary-focus">{{t('nickname')}}</strong>
           </p>
           <p class="py-10"
