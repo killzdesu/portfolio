@@ -1,0 +1,27 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+name: Norapat
+nickname: Jui
+fullname: Norapat Limsirorat
+hero:
+  hello: Hello!
+  iam: I'm
+  call: Also called
+  line1: An ordinary human who trying to make everyday exciting.
+  fulltime: Fulltime daydreamer
+  parttime: Part-time clinician
+  sometimes: Sometimes programmer
+contact:
+  head: Contact Me
+intro:
+  desc: Opinionated Vite Starter Template
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+not-found: Not found

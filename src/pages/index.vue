@@ -1,0 +1,53 @@
+<script setup lang="ts">
+// const router = useRouter()
+const { t } = useI18n()
+</script>
+
+<template>
+  <div class="container mx-auto">
+    <div class="min-h-xl bg-base-100 rounded-xl"
+      p="8 y-12">
+      <div class="flex-col lg:flex-row">
+        <div text="center md:left"
+          p="md:x-6 lg:x-10 xl:x-14">
+          <h1 class="text-4xl font-bold my-2">
+            <span class="block md:inline">{{t('hero.hello')}}</span> 
+            {{t('hero.iam')}} <span class="text-primary-focus">{{t('name')}}</span>
+          </h1>
+          <p text="base bold 2xl"
+            class="">
+            <span class="italic">{{t('hero.call')}}</span> <strong class="text-primary-focus">{{t('nickname')}}</strong>
+          </p>
+          <p class="py-10"
+            text="left md md:lg">
+            <div class="block my-1">
+            {{t('hero.line1')}}
+            </div>
+            <span class="oneline">
+              <i-mdi-creation text="cyan-400 dark:yellow-300" /> {{t('hero.fulltime')}} </span> 
+            <span class="oneline">
+              <i-mdi-heart-pulse class="text-red-600" /> {{t('hero.parttime')}} </span> 
+            <span class="oneline">
+              <i-mdi-code-json text="secondary-focus dark:secondary" /> 
+              {{t('hero.sometimes')}}
+            </span>
+            <div class="block my-1">
+              Looking forward to future opportunities.
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>
+
+<style>
+.oneline {
+  @apply flex items-center lg:inline-flex gap-x-1 px-1
+}
+
+</style>
+
+<route lang="yaml">
+</route>
