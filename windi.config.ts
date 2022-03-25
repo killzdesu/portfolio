@@ -26,5 +26,10 @@ export default defineConfig({
         }
       }
     }
+  },
+  daisyui: {
+    base: false,
+    themes: ['cupcake', 'dracula'],
+    darkTheme: 'dracula'
   }
 })

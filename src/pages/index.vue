@@ -16,7 +16,7 @@ watch(isSeeMoreHover, (newVal, oldVal) => {
 </script>
 
 <template>
-  <div class="container mx-auto xl:w-7/10">
+  <div class="container mx-auto xl:w-6/10">
     <div class="min-h-xl bg-base-100 rounded-xl"
       p="8 y-12">
       <div class="flex-col lg:flex-row">

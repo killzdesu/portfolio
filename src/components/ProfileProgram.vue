@@ -1,5 +1,5 @@
 <template>
-<div class="text-left my-2">
+<div :class="topClass">
   <p :class="titleClass">
     <i-carbon-events />
     <span>{{t('prog.title')}}</span>
@@ -19,6 +19,10 @@ const { t } = useI18n()
 const props = defineProps<{
   profileClass: any,
 }>()
+
+const topClass = computed(()=>([
+  props.profileClass.top ?? '',
+]))
 
 const titleClass = computed(()=>([
   '',

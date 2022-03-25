@@ -1,5 +1,5 @@
 <template>
-<div class="text-left my-2">
+<div :class="topClass">
   <p :class="titleClass">
     <i-mdi-alphabetical-variant v-if="locale =='en'" />
     <i-mdi-syllabary-hiragana v-if="locale =='ja'" />
@@ -24,6 +24,10 @@ const { t, locale } = useI18n()
 const props = defineProps<{
   profileClass: any,
 }>()
+
+const topClass = computed(()=>([
+  props.profileClass.top ?? '',
+]))
 
 const titleClass = computed(()=>([
   '',
