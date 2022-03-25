@@ -1,36 +1,28 @@
 <template>
-<p text="3xl primary-focus dark:primary" class="mt-4 font-bold">
-  <i-mdi-face-man />
-  Profile
-</p>
-<div clvass="divider"></div>
-<ProfileEducation :profile-class="profileClass" />
-<br>
-## Language:
-- Thai: Native speaker
-- English: Fluent
-- Japanese: JLPT N2 certified
+  <div class="divider"></div>
+  <p text="3xl primary-focus dark:primary" class="mt-4 font-bold inline-flex items-center">
+    <i-mdi-face-man />
+    <i-mdi-briefcase-edit-outline />
+    <span p="x-3">{{ t('profile') }}</span>
+  </p>
+  <div class="flex flex-row flex-wrap gap-x-4 justify-around">
+    <ProfileEducation :profile-class="profileClass" />
+    <ProfileLanguage :profile-class="profileClass" />
+    <ProfileCoding :profile-class="profileClass" />
+    <ProfileProgram :profile-class="profileClass" />
+  </div>
 
-## Programming:
- Competitive Programming
-- Thailand Olympiad in Informatics 2015: 1 of 8 finalists
-- Codeforces: Highest rating of 1916
-Web Development
-- Javascript
-- Node.js
-- Vue
-
-## Attended Program
-- Cultural Exchange Program at Ritsumeikan Senior Highschool
-- Research Exchange Program at Department of Microbiology, Faculty of Medicine, Chengkung University, Taiwan
 </template>
 
 <script setup lang="ts">
 const { t } = useI18n()
 
-const profileClass = {
-  title: "text-xl text-secondary-focus dark:text-secondary"
-}
+const profileClass = reactive({
+  title: "text-xl text-secondary-focus dark:text-secondary my-2 mt-4 font-bold",
+  container: 'container mx-auto bg-base-100 rounded-xl px-4 py-2 md:px-8 py-6',
+})
+profileClass.title += ' flex items-center gap-x-1'
+profileClass.container += ' max-w-lg min-w-sm lg:min-w-lg'
 
 </script>
 

@@ -11,7 +11,8 @@
     "test:e2e": "cypress open",
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
-    "gh-pages": "vite-ssg build && mv dist docs"
+    "add-gh-pages": "npm run build && git add dist -f && git commit -m \"Update Github Pages\"",
+    "gh-pages": "npm run add-gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@vueuse/core": "^8.1.1",

@@ -1,18 +1,17 @@
 <template>
 <div class="text-left my-2">
   <p :class="titleClass">
-      <i-carbon-education />
-      {{t('edu.title')}}
-    </p>
+    <i-carbon-code />
+    <span>{{t('coding.title')}}</span>
+  </p>
   <div :class="containerClass">
     <p>
-      <span class="font-bold">{{t('edu.school')}}</span>: {{t('edu.school-info')}}
+      <p class="font-bold"> {{t('coding.cp.title')}}</p>
+      {{t('coding.cp.info')}}
     </p>
     <p>
-      <span class="font-bold">{{t('edu.bachelor')}}</span>: {{t('edu.bachelor-info')}}
-    </p>
-    <p>
-      <span class="font-bold">{{t('edu.training')}}</span>: {{t('edu.school-info')}}
+      <p class="font-bold"> {{t('coding.web.title')}}</p>
+      {{t('coding.web.lang').trim().split('\n').join(', ')}}
     </p>
   </div>
 </div>

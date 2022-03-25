@@ -8,6 +8,7 @@ button:
 name: Norapat
 nickname: Jui
 fullname: Norapat Limsirorat
+not-found: Not found
 hero:
   hello: Hello!
   iam: I'm
@@ -20,14 +21,45 @@ hero:
     To learn more about my profile, skills, or favorite hobbies
   more: see more information from 
   above-icons: above icons!
+  more-after: ''
 contact:
   head: Contact Me
-profile:
-  edu:
-    title: Education
-    school: Highschool
-    school-info: Mahidol Wittayanusorn school
-    bachelor: Bechelor
-    bachelor-info: Faculty of Medicine, Siriraj hospital, Mahidol
-    training: In training
-not-found: Not found
+profile: Profile
+edu:
+  title: Education
+  school: Highschool
+  school-info: Mahidol Wittayanusorn school
+  bachelor: Bechelor
+  bachelor-info: Faculty of Medicine, Siriraj hospital, Mahidol
+  training: In training
+lang:
+  title: Language
+  th: (Thai)
+  en: ""
+  ja: (Japanese)
+  lvl:
+    th: Mother tongue
+    en: Fluent
+    ja: JLPT N2 certified
+coding:
+  title: Programming
+  cp:
+    title: Competitive ProgrammingThailand
+    info: |
+      Thailand Olympiad in Informatics 2015: 1 of 8 finalists
+      Codeforces: Highest rating of 1916
+  web: 
+    title: Web Development
+    lang: |
+      Javascript
+      Node.js
+      Vue
+prog:
+  title: Attended Programs
+  japan:
+    title: Cultural Exchange Program
+    at: Ritsumeikan Senior Highschool
+  taiwan:
+    title: Research Exchange Program
+    at: Department of Microbiology, Faculty of Medicine, Chengkung University, Taiwan
+

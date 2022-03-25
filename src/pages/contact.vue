@@ -1,8 +1,8 @@
 <template>
   <div class="h-screen-sm flex flex-col justify-center">
     <div class="min-h-sm w-full lg:w-md bg-base-100 rounded-xl mx-auto"
-      p="8 y-4">
-      <div text="3xl" class="font-bold my-6">{{ t('contact.head') }}</div>
+      p="x-8 y-8">
+      <div text="3xl" m="b-6" class="font-bold">{{ t('contact.head') }}</div>
       <div class="text-left my-2">
         <p :class="langClass.nameSize">{{ t('fullname') }}</p>
         <p class="text-lg">(+66)81-249-xxxx</p>
@@ -23,6 +23,10 @@
         <p class="sns-line">
           <i-cib-line text="2xl green-400" class="mx-2" />
           killzdesu
+        </p>
+        <p class="sns-line">
+          <i-cib-discord text="2xl indigo-500" class="mx-2" />
+          killz#5916
         </p>
       </div>
 

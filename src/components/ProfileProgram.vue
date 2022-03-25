@@ -1,18 +1,15 @@
 <template>
 <div class="text-left my-2">
   <p :class="titleClass">
-      <i-carbon-education />
-      {{t('edu.title')}}
-    </p>
+    <i-carbon-events />
+    <span>{{t('prog.title')}}</span>
+  </p>
   <div :class="containerClass">
     <p>
-      <span class="font-bold">{{t('edu.school')}}</span>: {{t('edu.school-info')}}
+      <span class="font-bold">{{t('prog.japan.title')}}</span> at {{t('prog.japan.at')}}
     </p>
     <p>
-      <span class="font-bold">{{t('edu.bachelor')}}</span>: {{t('edu.bachelor-info')}}
-    </p>
-    <p>
-      <span class="font-bold">{{t('edu.training')}}</span>: {{t('edu.school-info')}}
+      <span class="font-bold">{{t('prog.taiwan.title')}}</span> at {{t('prog.taiwan.at')}}
     </p>
   </div>
 </div>

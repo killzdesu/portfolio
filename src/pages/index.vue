@@ -16,7 +16,7 @@ watch(isSeeMoreHover, (newVal, oldVal) => {
 </script>
 
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto xl:w-7/10">
     <div class="min-h-xl bg-base-100 rounded-xl"
       p="8 y-12">
       <div class="flex-col lg:flex-row">
@@ -48,6 +48,7 @@ watch(isSeeMoreHover, (newVal, oldVal) => {
             <div class="block my-1">
               {{ t('hero.more') }}
               <span class="seemore" ref='textSeeMore'>{{t('hero.above-icons')}}</span>
+              {{ t('hero.more-after') }}
             </div>
           </p>
         </div>

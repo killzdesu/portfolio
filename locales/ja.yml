@@ -8,6 +8,7 @@ button:
 name: ノラパット
 nickname: ジュイ
 fullname: ノラパット　リンシロラット
+not-found: 見つかりませんでした
 hero:
   hello: こんにちは！
   iam: 私は
@@ -16,6 +17,11 @@ hero:
   fulltime: フルタイムの空想家
   parttime: パートタイムの医者
   sometimes: ときどきのプログラマー
+  further: |
+    私のプロフィール、スキル、好きな趣味については、
+  more: ''
+  above-icons: 上のアイコン
+  more-after: より詳細をご覧ください
 contact:
   head: 連絡先
 intro:
@@ -23,4 +29,19 @@ intro:
   dynamic-route: 動的ルートのデモ
   hi: こんにちは、{name}!
   whats-your-name: 君の名は。
-not-found: 見つかりませんでした
+profile: プロファイル
+edu:
+  title: 教育
+coding:
+  title: プログラミング
+prog:
+  title: 参加した活動
+lang:
+  title: 言語
+  th: (タイ)
+  en: (英語)
+  ja: ""
+  lvl:
+    th: 母語
+    en: 専門会話
+    ja: 日常会話, JLPT(日本語能力試験) N2

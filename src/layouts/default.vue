@@ -4,7 +4,7 @@
     id="main-container"
     p="x-4 y-6 lg:t-10"
     text="center gray-700 dark:gray-200"
-    w="md:4/5 lg:4/5 xl:3/5"
+    w="md:4/5 lg:4/5 xl:5/8"
     class="mx-auto min-h-full"
   >
     <Navbar />
